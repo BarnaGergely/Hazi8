@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/user/CLionProjects/Hazi8/main.c" "/home/user/CLionProjects/Hazi8/cmake-build-debug/CMakeFiles/Hazi8.dir/main.c.o"
+  "F:/SZTE/Progalap_1/Hazi8/main.c" "F:/SZTE/Progalap_1/Hazi8/cmake-build-debug/CMakeFiles/Hazi8.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -1,3 +1,3 @@
-/home/user/CLionProjects/Hazi8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/user/CLionProjects/Hazi8/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/user/CLionProjects/Hazi8/cmake-build-debug/CMakeFiles/Hazi8.dir
+F:/SZTE/Progalap_1/Hazi8/cmake-build-debug/CMakeFiles/Hazi8.dir
+F:/SZTE/Progalap_1/Hazi8/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/SZTE/Progalap_1/Hazi8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
