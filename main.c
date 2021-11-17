@@ -46,11 +46,11 @@ int betoltoMeteor(char forras[100], int **meteorok, MERET *meret){
 int kiiro(int szam, char file[100]){
     FILE *outfile;
 
-    if (!(outfile = fopen("ki.txt", "w"))) {
+    if (!(outfile = fopen(file, "w"))) {
         fclose(outfile);
         return 1;
     }
-    fprintf(outfile, "%.3lf\n", szam);
+    fprintf(outfile, "%d\n", szam);
     fclose(outfile);
 
     return 0;
@@ -184,7 +184,6 @@ int main() {
 
     // Meretek betoltese
     MERET meret;
-    int  helyzet = 1;
 
     if (betoltoMeret("be.txt", &meret) == 1){
         return 1;
@@ -203,10 +202,11 @@ int main() {
     /* SZAMOLAS */
     int megsemmisitettMeteor = 0;
     int osszesMeteor = 0;
+    int  helyzet = 0;
 
-
+    // Kezdeti helyzet
     for (int i = 0; i < meret.y; ++i) {
-        if(meteorok[i][0] == 1){
+        if(meteorok[0][i] == 1){
             helyzet = i;
             megsemmisitettMeteor ++;
             break;
@@ -225,11 +225,16 @@ int main() {
     }
 
     int atjutottMeteor = osszesMeteor - megsemmisitettMeteor;
+    printf("\n%d = %d - %d\n", atjutottMeteor, osszesMeteor, megsemmisitettMeteor);
 
 
 
     
     /* KIIRAS */
+    if (kiiro( atjutottMeteor, "ki.txt") == 1){
+        return 1;
+    }
+
 
     /* Valtozo felszabaditas */
     for (int i = 0; i < meret.x ; ++i) {
